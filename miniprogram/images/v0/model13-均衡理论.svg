@@ -1,0 +1,134 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3E4784"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #13</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">物理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">动态平衡系统</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 天平主体 -->
+      <path d="M-200 0 L200 0 M0 -80 L0 80" stroke="#3E4784" stroke-width="4"/>
+      <circle cx="-160" cy="0" r="40" fill="#F4EBFF" stroke="#3E4784" stroke-width="2"/>
+      <circle cx="160" cy="0" r="40" fill="#F4EBFF" stroke="#3E4784" stroke-width="2"/>
+      
+      <!-- 动态平衡箭头 -->
+      <path d="M0 -120 L0 -160" stroke="#3E4784" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M0 120 L0 160" stroke="#3E4784" stroke-width="3" marker-end="url(#arrowhead)"/>
+      
+      <!-- 平衡说明 -->
+      <text x="0" y="-200" text-anchor="middle" fill="#3E4784" font-size="28">输入力量</text>
+      <text x="0" y="200" text-anchor="middle" fill="#3E4784" font-size="28">反馈调节</text>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">均衡理论</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Equilibrium Theory</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      系统内部各种力量相互作用达到动态平衡的状态，任何变量的改变都会引发系统的自我调节反应。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "自然总是倾向于恢复她的平衡，这是宇宙最基本的法则。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 艾萨克·牛顿</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 市场经济</text>
+        <text x="0" y="48" fill="#475467" font-size="28">供需价格平衡机制</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 生态系统</text>
+        <text x="0" y="48" fill="#475467" font-size="28">物种数量动态平衡</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 化学平衡</text>
+        <text x="0" y="48" fill="#475467" font-size="28">反应物浓度动态调节</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 人体稳态</text>
+        <text x="0" y="48" fill="#475467" font-size="28">体温/PH值调节系统</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#3E4784" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 监测关键变量波动</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 建立动态调节机制</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视外部冲击因素</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 误判平衡临界点</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#3E4784"/>
+        <text x="40" y="24" fill="#475467" font-size="24">供需理论 (#48)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">反作用力原则 (#17)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">系统动力学 (#70)</text>
+      </g>
+    </g>
+  </g>
+</svg>

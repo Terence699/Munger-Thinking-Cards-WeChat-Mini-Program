@@ -1,0 +1,146 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon fill="#7F56D9" points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #49</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">经济学思维模型</text>
+  </g>
+
+  <!-- 核心图形区域 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">规模效应曲线</text>
+    
+    <!-- 成本曲线可视化 -->
+    <g transform="translate(144 120)">
+      <path d="M60 240 L780 240" stroke="#E4E7EC" stroke-width="2"/>
+      <path d="M60 240 Q420 120 780 80" stroke="#7F56D9" stroke-width="4" fill="none"/>
+      
+      <!-- 规模节点 -->
+      <g transform="translate(60 180)">
+        <circle r="24" fill="#7F56D9"/>
+        <text x="0" y="8" text-anchor="middle" fill="white" font-size="24">A</text>
+        <text x="-30" y="80" fill="#475467" font-size="24">小规模</text>
+        <text x="-40" y="120" fill="#7F56D9" font-size="24">高成本</text>
+      </g>
+      
+      <g transform="translate(420 60)">
+        <circle r="24" fill="#7F56D9"/>
+        <text x="0" y="8" text-anchor="middle" fill="white" font-size="24">B</text>
+        <text x="-30" y="80" fill="#475467" font-size="24">临界点</text>
+      </g>
+      
+      <g transform="translate(780 20)">
+        <circle r="24" fill="#7F56D9"/>
+        <text x="0" y="8" text-anchor="middle" fill="white" font-size="24">C</text>
+        <text x="-30" y="80" fill="#475467" font-size="24">大规模</text>
+        <text x="-40" y="120" fill="#7F56D9" font-size="24">低成本</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">规模效应</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Economies of Scale</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      随着生产规模扩大，单位成本递减的经济规律，通过固定成本分摊、运营效率提升和采购优势实现边际效益递增。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "规模优势本质上是信息优势，当产量增加时信息成本被不断摊薄。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 查理·芒格</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 制造业</text>
+        <text x="0" y="48" fill="#475467" font-size="28">生产线固定成本分摊</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 科技行业</text>
+        <text x="0" y="48" fill="#475467" font-size="28">研发成本用户摊薄</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 零售业</text>
+        <text x="0" y="48" fill="#475467" font-size="28">集中采购成本优势</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 服务业</text>
+        <text x="0" y="48" fill="#475467" font-size="28">标准化服务边际扩张</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 识别固定成本结构</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 计算边际成本拐点</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 盲目扩张导致管理失效</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视市场需求上限</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">边际效用递减 (#47)</text>
+      </g>
+      
+      <g transform="translate(280 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">垄断竞争模型 (#54)</text>
+      </g>
+      
+      <g transform="translate(560 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">系统动力学 (#70)</text>
+      </g>
+    </g>
+  </g>
+</svg>

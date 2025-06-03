@@ -1,0 +1,146 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L12 6 L0 12" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #35</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">逆向推演过程</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 双向箭头系统 -->
+      <path d="M-300 0 L300 0" stroke="#E4E7EC" stroke-width="2"/>
+      <path d="M-300 0 L-180 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M300 0 L180 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      
+      <!-- 正向思维模块 -->
+      <g transform="translate(-200 0)">
+        <rect width="160" height="160" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="50" text-anchor="middle" fill="#1D2939" font-size="26">目标设定</text>
+        <text x="80" y="90" text-anchor="middle" fill="#7F56D9" font-size="26">正向推导</text>
+      </g>
+      
+      <!-- 逆向思维模块 -->
+      <g transform="translate(200 0)">
+        <rect width="160" height="160" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="50" text-anchor="middle" fill="#1D2939" font-size="26">结果倒推</text>
+        <text x="80" y="90" text-anchor="middle" fill="#7F56D9" font-size="26">风险预判</text>
+      </g>
+      
+      <!-- 转换图标 -->
+      <g transform="translate(0 -30)">
+        <rect width="120" height="60" rx="30" fill="#7F56D9"/>
+        <text x="60" y="38" text-anchor="middle" fill="#FFF" font-size="28">反转</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">逆向思维</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Inversion Thinking</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过反向思考问题本质，避免正向思维盲点，揭示隐藏风险与解决方案的方法论
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "反过来想，总是反过来想。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 查理·芒格</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 商业策略</text>
+        <text x="0" y="48" fill="#475467" font-size="28">竞争对手弱点分析</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 风险管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">压力测试场景构建</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 产品设计</text>
+        <text x="0" y="48" fill="#475467" font-size="28">故障模式预演机制</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 决策优化</text>
+        <text x="0" y="48" fill="#475467" font-size="28">反证法验证逻辑</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 明确目标后先思考失败路径</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 系统化列举反面因素</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 陷入否定式思维循环</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽略正向基础逻辑</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">框架效应 (#29)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">归因理论 (#40)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">奥卡姆剃刀 (#79)</text>
+      </g>
+    </g>
+  </g>
+</svg>

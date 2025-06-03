@@ -1,0 +1,144 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="loopArrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10" fill="#175CD3"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #70</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">工程学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">反馈循环系统</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 主循环结构 -->
+      <path d="M-120 0A120 120 0 1 1 120 0" stroke="#175CD3" stroke-width="4" fill="none" marker-end="url(#loopArrow)"/>
+      <path d="M120 0A120 120 0 1 1 -120 0" stroke="#B2DDFF" stroke-width="4" fill="none" marker-end="url(#loopArrow)"/>
+      
+      <!-- 系统元素 -->
+      <g transform="translate(-160 -80)">
+        <rect width="120" height="80" rx="12" fill="#EFF8FF" stroke="#175CD3"/>
+        <text x="60" y="30" text-anchor="middle" fill="#1D2939" font-size="24">库存量</text>
+        <text x="60" y="55" text-anchor="middle" fill="#175CD3" font-size="22">500单位</text>
+      </g>
+      
+      <g transform="translate(40 -80)">
+        <path d="M0 0 L60 0 L60 40 L0 40" fill="#EFF8FF" stroke="#175CD3"/>
+        <text x="30" y="25" text-anchor="middle" fill="#1D2939" font-size="24">流入率</text>
+        <text x="30" y="50" text-anchor="middle" fill="#175CD3" font-size="22">+20/天</text>
+      </g>
+      
+      <g transform="translate(-80 100)">
+        <circle r="40" fill="#EFF8FF" stroke="#175CD3"/>
+        <text x="0" y="5" text-anchor="middle" fill="#1D2939" font-size="24">延迟</text>
+        <text x="0" y="30" text-anchor="middle" fill="#175CD3" font-size="22">3天</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">系统动力学</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">System Dynamics</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      研究复杂系统中反馈结构和动态行为的学科，通过因果关系环揭示非线性关系和延迟效应。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "系统结构决定行为表现，时间延迟放大波动效应。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 杰伊·福瑞斯特</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#175CD3" font-size="32" font-weight="600">• 供应链管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">库存波动预测分析</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#175CD3" font-size="32" font-weight="600">• 城市规划</text>
+        <text x="0" y="48" fill="#475467" font-size="28">交通流量动态模拟</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#175CD3" font-size="32" font-weight="600">• 气候变化</text>
+        <text x="0" y="48" fill="#475467" font-size="28">碳循环系统建模</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#175CD3" font-size="32" font-weight="600">• 企业管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">组织行为动态预测</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#EFF8FF" stroke="#84CAFF" stroke-width="2"/>
+    <text x="40" y="64" fill="#175CD3" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 识别关键反馈回路</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 量化时间延迟效应</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FEF3F2" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 线性思维误判系统</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视隐性变量影响</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#175CD3"/>
+        <text x="40" y="24" fill="#475467" font-size="24">反馈回路 (#68)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">冗余备份 (#66)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">瓶颈分析 (#71)</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,150 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="arrowhead" d="M0 0 L12 6 L0 12" fill="#3E4784"/>
+  </defs>
+
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #80</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">哲学思维模型</text>
+  </g>
+
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">实用主义实践循环</text>
+    
+    <g transform="translate(444 200)">
+      <path d="M-360 0 L360 0" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <g transform="translate(-280 0)">
+        <circle r="60" fill="#EEF4FF" stroke="#3E4784" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#1D2939" font-size="26">问题识别</text>
+        <text x="0" y="24" text-anchor="middle" fill="#3E4784" font-size="26">现实需求</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">明确目标</text>
+        </g>
+      </g>
+      
+      <g transform="translate(0 0)">
+        <circle r="60" fill="#EEF4FF" stroke="#3E4784" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#1D2939" font-size="26">行动方案</text>
+        <text x="0" y="24" text-anchor="middle" fill="#3E4784" font-size="26">实践检验</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">实验执行</text>
+        </g>
+      </g>
+      
+      <g transform="translate(280 0)">
+        <circle r="60" fill="#EEF4FF" stroke="#3E4784" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#1D2939" font-size="26">结果评估</text>
+        <text x="0" y="24" text-anchor="middle" fill="#3E4784" font-size="26">效果验证</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">迭代优化</text>
+        </g>
+      </g>
+      
+      <path d="M-200 0 L-120 0" stroke="#3E4784" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M80 0 L160 0" stroke="#3E4784" stroke-width="3" marker-end="url(#arrowhead)"/>
+      
+      <g transform="translate(0 -90)">
+        <rect width="360" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+        <text x="180" y="40" text-anchor="middle" fill="#3E4784" font-size="24">真理=有效解决方案×实践验证</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">实用主义</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Pragmatism</tspan>
+    </text>
+  </g>
+
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      以实践效果为导向的哲学方法，强调通过实际结果检验观念的有效性，主张理论应为现实问题提供解决方案。
+    </div>
+  </foreignObject>
+
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "考虑实际效果，它们会带来概念上的清晰。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 威廉·詹姆斯</div>
+    </div>
+  </foreignObject>
+
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 商业决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">快速迭代验证商业模式</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 教育创新</text>
+        <text x="0" y="48" fill="#475467" font-size="28">以学习成果设计课程</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 科技研发</text>
+        <text x="0" y="48" fill="#475467" font-size="28">原型测试驱动产品开发</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#3E4784" font-size="32" font-weight="600">• 公共政策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">试点项目验证政策效果</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#EEF4FF" stroke="#3E4784" stroke-width="2"/>
+    <text x="40" y="64" fill="#3E4784" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 聚焦可验证的结果</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 保持方案灵活性</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 短期主义倾向</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视理论指导</text>
+    </g>
+  </g>
+
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#3E4784"/>
+        <text x="40" y="24" fill="#475467" font-size="24">奥卡姆剃刀 (#79)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">第一性原理 (#82)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">控制二分法 (#84)</text>
+      </g>
+    </g>
+  </g>
+</svg>

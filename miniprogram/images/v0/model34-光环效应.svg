@@ -1,0 +1,153 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <linearGradient id="haloGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEC84B"/>
+      <stop offset="100%" stop-color="#FDB022"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#7F56D9"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #34</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形区域 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">认知偏差可视化</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 中心人物 -->
+      <circle cx="0" cy="0" r="80" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+      <path d="M-20 30 Q0 50 20 30 M-30 -20 L30 -20" stroke="#7F56D9" stroke-width="3" fill="none"/>
+      
+      <!-- 光环效果 -->
+      <circle cx="0" cy="0" r="120" fill="none" stroke="url(#haloGradient)" stroke-width="8" opacity="0.6" stroke-dasharray="10 5"/>
+      
+      <!-- 辐射属性 -->
+      <g transform="rotate(-30)">
+        <g transform="translate(200 0)">
+          <rect width="100" height="40" rx="8" fill="#FFF" stroke="#E4E7EC"/>
+          <text x="50" y="26" text-anchor="middle" fill="#7F56D9" font-size="20">可信度</text>
+        </g>
+        <path d="M80 0 L180 0" stroke="#7F56D9" stroke-width="2" opacity="0.6"/>
+      </g>
+
+      <g transform="rotate(90)">
+        <g transform="translate(200 0)">
+          <rect width="100" height="40" rx="8" fill="#FFF" stroke="#E4E7EC"/>
+          <text x="50" y="26" text-anchor="middle" fill="#7F56D9" font-size="20">能力</text>
+        </g>
+        <path d="M80 0 L180 0" stroke="#7F56D9" stroke-width="2" opacity="0.6"/>
+      </g>
+
+      <g transform="rotate(210)">
+        <g transform="translate(200 0)">
+          <rect width="100" height="40" rx="8" fill="#FFF" stroke="#E4E7EC"/>
+          <text x="50" y="26" text-anchor="middle" fill="#7F56D9" font-size="20">亲和力</text>
+        </g>
+        <path d="M80 0 L180 0" stroke="#7F56D9" stroke-width="2" opacity="0.6"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">光环效应</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Halo Effect</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      对某人/物的整体印象会影响对其具体特质的判断，如同光环笼罩导致认知偏差。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "人们总倾向于让突出的特质照亮其他所有特征"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 爱德华·桑代克</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 市场营销</text>
+        <text x="0" y="48" fill="#475467" font-size="28">品牌形象辐射产品认知</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 人才评估</text>
+        <text x="0" y="48" fill="#475467" font-size="28">外貌影响能力判断</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 产品设计</text>
+        <text x="0" y="48" fill="#475467" font-size="28">外观美感提升功能评价</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 学术评价</text>
+        <text x="0" y="48" fill="#475467" font-size="28">名校背景影响论文评审</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立结构化评估体系</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 分离特质独立判断</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 以单一优点推断整体</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视负面信息</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">框架效应 (#29)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">逆向思维 (#35)</text>
+      </g>
+    </g>
+  </g>
+</svg>

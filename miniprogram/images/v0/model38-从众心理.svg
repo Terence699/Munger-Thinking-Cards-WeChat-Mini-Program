@@ -1,0 +1,137 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="herdArrow" d="M0 0 L12 6 L0 12" fill="#7F56D9"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #38</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">群体行为模拟</text>
+    
+    <!-- 人群动态 -->
+    <g transform="translate(444 200)">
+      <!-- 主流方向 -->
+      <path d="M-300 0 L300 0" stroke="#E4E7EC" stroke-width="2"/>
+      <g transform="translate(-300 0)">
+        <circle cx="0" cy="0" r="24" fill="#7F56D9"/>
+        <path d="M0 30 l10 20 -20 0 z" fill="#7F56D9"/>
+        <g transform="translate(60 0)">
+          <circle cx="0" cy="0" r="24" fill="#B692F6"/>
+          <path d="M0 30 l10 20 -20 0 z" fill="#B692F6"/>
+        </g>
+        <g transform="translate(120 0)">
+          <circle cx="0" cy="0" r="24" fill="#D6BBFB"/>
+          <path d="M0 30 l10 20 -20 0 z" fill="#D6BBFB"/>
+        </g>
+      </g>
+      
+      <!-- 逆向个体 -->
+      <g transform="translate(240 -60)">
+        <circle cx="0" cy="0" r="24" fill="#F04438"/>
+        <path d="M0 30 l-10 20 20 0 z" fill="#F04438"/>
+        <text x="0" y="80" text-anchor="middle" fill="#475467" font-size="24">逆向思考者</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">从众心理</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Herd Mentality</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      个体在群体压力下改变自身行为或观点以符合多数人倾向的心理现象，可能导致非理性决策。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "人类最深刻的教训是：独立思考比群体共识更需要勇气。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 所罗门·阿希</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 消费行为</text>
+        <text x="0" y="48" fill="#475467" font-size="28">网红产品跟风购买</text>
+      </g>
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 投资决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">市场羊群效应分析</text>
+      </g>
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 社会趋势</text>
+        <text x="0" y="48" fill="#475467" font-size="28">文化传播路径预测</text>
+      </g>
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 团队决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">群体思维识别预防</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 识别群体压力来源</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 建立独立判断标准</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 信息瀑布效应误导</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 群体极化风险加剧</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">社会认同理论 (#20)</text>
+      </g>
+      <g transform="translate(340 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">损失厌恶 (#22)</text>
+      </g>
+      <g transform="translate(640 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+    </g>
+  </g>
+</svg>

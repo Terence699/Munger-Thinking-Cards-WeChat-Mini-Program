@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="600">MODEL #98</text>
+    <text x="260" y="38" fill="#475467" font-size="26">语言学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">语言-思维互动模型</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 语言思维循环 -->
+      <circle r="120" fill="none" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 语言节点 -->
+      <g transform="translate(-100 0)">
+        <rect width="160" height="80" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" fill="#1D2939" font-size="26">语言结构</text>
+        <text x="80" y="65" text-anchor="middle" fill="#7F56D9" font-size="24">Language</text>
+      </g>
+      
+      <!-- 思维节点 -->
+      <g transform="translate(100 0)">
+        <rect width="160" height="80" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="35" text-anchor="middle" fill="#1D2939" font-size="26">思维方式</text>
+        <text x="80" y="65" text-anchor="middle" fill="#7F56D9" font-size="24">Thought</text>
+      </g>
+      
+      <!-- 连接箭头 -->
+      <path d="M-90 -40 C-30 -80 30 -80 90 -40" stroke="#7F56D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <path d="M90 40 C30 80 -30 80 -90 40" stroke="#7F56D9" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939" font-size="72" font-weight="600">萨丕尔-沃夫假说</text>
+    <text text-anchor="middle" fill="#667085" font-size="40" y="80">Sapir-Whorf Hypothesis</text>
+  </g>
+
+  <!-- 概念解释 -->
+  <text x="540" y="880" text-anchor="middle" fill="#475467" font-size="32">
+    语言结构会影响人们的思维方式和世界观，
+  </text>
+  <text x="540" y="920" text-anchor="middle" fill="#475467" font-size="32">
+    不同语言的使用者会产生不同的认知模式。
+  </text>
+
+  <!-- 专家洞见 -->
+  <text x="540" y="1020" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    "语言不仅仅是表达思想的工具，
+  </text>
+  <text x="540" y="1060" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    更是塑造思维的模具。"
+  </text>
+  <text x="540" y="1120" text-anchor="middle" fill="#667085" font-size="28">
+    —— 本杰明·李·沃夫
+  </text>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 跨文化交际</text>
+        <text x="0" y="48" fill="#475467" font-size="28">语言差异影响分析</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 教育设计</text>
+        <text x="0" y="48" fill="#475467" font-size="28">语言学习方法优化</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 认知研究</text>
+        <text x="0" y="48" fill="#475467" font-size="28">语言对思维的影响</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 产品本地化</text>
+        <text x="0" y="48" fill="#475467" font-size="28">文化适应性设计</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 关注语言特性</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 理解文化背景</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度决定论</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视普遍性</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">文化相对论 (#97)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">认知框架 (#38)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">范式转换 (#41)</text>
+      </g>
+    </g>
+  </g>
+</svg>

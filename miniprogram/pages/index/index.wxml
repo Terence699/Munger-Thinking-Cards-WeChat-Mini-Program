@@ -1,0 +1,50 @@
+<!--芒格思维卡片主页面-->
+  <view class="container">
+  <!-- 卡片查看器组件 -->
+  <card-viewer 
+    cardData="{{currentCard}}"
+    totalCards="{{totalCards}}"
+    bind:swipeleft="onSwipeLeft"
+    bind:swiperight="onSwipeRight"
+    bind:cardChanged="onCardChanged"
+  ></card-viewer>
+  
+  <!-- 底部控制面板 -->
+  <view class="control-panel">
+    <!-- 模式切换 -->
+    <view class="mode-switch">
+      <view 
+        class="mode-item {{switchMode === 'random' ? 'active' : ''}}"
+        bindtap="switchToRandomMode"
+      >
+        <view class="mode-icon">🎲</view>
+        <view class="mode-text">随机</view>
+      </view>
+      <view 
+        class="mode-item {{switchMode === 'sequence' ? 'active' : ''}}"
+        bindtap="switchToSequenceMode"
+      >
+        <view class="mode-icon">📝</view>
+        <view class="mode-text">顺序</view>
+      </view>
+    </view>
+    
+    <!-- 操作按钮 -->
+    <view class="action-buttons">
+      <view class="action-btn" bindtap="previousCard">
+        <view class="btn-icon">👈</view>
+        <view class="btn-text">上一张</view>
+      </view>
+      
+      <view class="action-btn primary" bindtap="randomCard">
+        <view class="btn-icon">🔀</view>
+        <view class="btn-text">随机</view>
+      </view>
+      
+      <view class="action-btn" bindtap="nextCard">
+        <view class="btn-icon">👉</view>
+        <view class="btn-text">下一张</view>
+      </view>
+    </view>
+  </view>
+</view>

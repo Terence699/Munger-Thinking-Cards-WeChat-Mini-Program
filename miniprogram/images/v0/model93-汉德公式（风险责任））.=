@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="600">MODEL #93</text>
+    <text x="260" y="38" fill="#475467" font-size="26">法学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">责任判定三要素</text>
+
+    <g transform="translate(444 200)">
+      <path d="M-360 0 L360 0" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 预防成本B -->
+      <g transform="translate(-280 0)">
+        <rect width="160" height="120" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="40" text-anchor="middle" fill="#1D2939" font-size="26">预防成本</text>
+        <text x="80" y="80" text-anchor="middle" fill="#7F56D9" font-size="26">B</text>
+      </g>
+
+      <!-- 事故概率P -->
+      <g transform="translate(0 0)">
+        <rect width="160" height="120" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="40" text-anchor="middle" fill="#1D2939" font-size="26">发生概率</text>
+        <text x="80" y="80" text-anchor="middle" fill="#7F56D9" font-size="26">P</text>
+      </g>
+
+      <!-- 损失金额L -->
+      <g transform="translate(280 0)">
+        <rect width="160" height="120" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="40" text-anchor="middle" fill="#1D2939" font-size="26">损失金额</text>
+        <text x="80" y="80" text-anchor="middle" fill="#7F56D9" font-size="26">L</text>
+      </g>
+
+      <!-- 公式展示 -->
+      <g transform="translate(0 160)">
+        <rect width="360" height="60" rx="8" fill="#FFFFFF" stroke="#E4E7EC"/>
+        <text x="180" y="40" text-anchor="middle" fill="#7F56D9" font-size="24">B < P × L</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939" font-size="72" font-weight="600">汉德公式</text>
+    <text text-anchor="middle" fill="#667085" font-size="40" y="80">Hand Formula</text>
+  </g>
+
+  <!-- 概念解释 -->
+  <text x="540" y="880" text-anchor="middle" fill="#475467" font-size="32">
+    当预防成本小于事故概率与损失金额的乘积时，
+  </text>
+  <text x="540" y="920" text-anchor="middle" fill="#475467" font-size="32">
+    行为人应承担相应的预防责任。
+  </text>
+
+  <!-- 专家洞见 -->
+  <text x="540" y="1020" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    "理性人的注意义务应当以成本收益分析为基础，
+  </text>
+  <text x="540" y="1060" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    而非道德或情感判断。"
+  </text>
+  <text x="540" y="1120" text-anchor="middle" fill="#667085" font-size="28">
+    —— 勒尔尼德·汉德法官
+  </text>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 侵权责任</text>
+        <text x="0" y="48" fill="#475467" font-size="28">合理注意义务判定</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 产品安全</text>
+        <text x="0" y="48" fill="#475467" font-size="28">预防措施成本效益</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 环境保护</text>
+        <text x="0" y="48" fill="#475467" font-size="28">污染防治投入评估</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 风险管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">预防措施优化</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 量化风险概率</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 评估预防成本</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视非货币损失</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 低估概率风险</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">成本效益分析 (#44)</text>
+      </g>
+      
+      <g transform="translate(320 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">风险管理 (#69)</text>
+      </g>
+      
+      <g transform="translate(640 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">概率论 (#3)</text>
+      </g>
+    </g>
+  </g>
+</svg>

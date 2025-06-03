@@ -1,0 +1,139 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="warningIcon" d="M12 0L24 20 12 40 0 20 12 0M13 28V32H11V28H13ZM13 8V24H11V8H13Z" fill="#F04438"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #90</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">统计学思维模型</text>
+  </g>
+
+  <!-- 核心图形区域 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">数据聚合矛盾现象</text>
+    
+    <!-- 数据对比展示 -->
+    <g transform="translate(444 200)">
+      <!-- 分组数据 -->
+      <g transform="translate(-200 0)">
+        <rect width="360" height="160" rx="8" fill="#FFF" stroke="#E4E7EC"/>
+        <text x="180" y="40" text-anchor="middle" fill="#1D2939" font-size="28">分组数据对比</text>
+        <text x="50" y="90" font-size="24">学院A: 男30% vs 女50%</text>
+        <text x="50" y="130" font-size="24">学院B: 男80% vs 女90%</text>
+      </g>
+      
+      <!-- 汇总数据 -->
+      <g transform="translate(200 0)">
+        <rect width="360" height="160" rx="8" fill="#FFF" stroke="#E4E7EC"/>
+        <text x="180" y="40" text-anchor="middle" fill="#1D2939" font-size="28">汇总数据对比</text>
+        <text x="180" y="110" font-size="24" fill="#F04438">男60% vs 女40%</text>
+      </g>
+      
+      <!-- 警示图标 -->
+      <use xlink:href="#warningIcon" transform="translate(0 -80) scale(2)"/>
+      <path d="M-100 0 L100 0" stroke="#F04438" stroke-width="3" stroke-dasharray="8 8"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">辛普森悖论</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Simpson's Paradox</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      当分组数据与整体数据呈现相反趋势的统计现象，提醒我们警惕数据聚合带来的认知偏差。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "数据不会说谎，但聚合方式可能制造幻觉。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 爱德华·H·辛普森</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 医学研究</text>
+        <text x="0" y="48" fill="#475467" font-size="28">药物疗效分组分析</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 教育统计</text>
+        <text x="0" y="48" fill="#475467" font-size="28">录取率分层解读</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 商业分析</text>
+        <text x="0" y="48" fill="#475467" font-size="28">销售数据维度拆解</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 社会调查</text>
+        <text x="0" y="48" fill="#475467" font-size="28">民意数据交叉验证</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 数据分层分析</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 检查混杂变量</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽略数据分层</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 错误归因因果</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">统计显著性 (#7)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">基础概率谬误 (#89)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">归因理论 (#40)</text>
+      </g>
+    </g>
+  </g>
+</svg>

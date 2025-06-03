@@ -1,0 +1,145 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #19</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">锚定调整过程</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 标尺基线 -->
+      <path d="M-300 0 L300 0" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 锚点数值 -->
+      <g transform="translate(-200 0)">
+        <rect width="160" height="80" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="30" text-anchor="middle" fill="#7F56D9" font-size="28">初始锚点</text>
+        <text x="80" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">$999</text>
+      </g>
+      
+      <!-- 调整箭头 -->
+      <path d="M40 0 L200 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      
+      <!-- 最终估值 -->
+      <g transform="translate(200 0)">
+        <rect width="160" height="80" rx="12" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="30" text-anchor="middle" fill="#7F56D9" font-size="28">实际价值</text>
+        <text x="80" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">$599</text>
+      </g>
+      
+      <!-- 调整不足提示 -->
+      <text x="0" y="-70" text-anchor="middle" fill="#667085" font-size="28">调整不足偏差</text>
+      <path d="M-50 -50 L50 -50" stroke="#F04438" stroke-width="2" stroke-dasharray="4"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">锚定效应</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Anchoring Effect</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      决策时过度依赖首次接触的信息作为基准，即使后续获得新信息也难以充分调整的心理偏差。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "任何数字都可能成为锚点，将你的判断拖向它的方向。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 丹尼尔·卡尼曼</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 定价策略</text>
+        <text x="0" y="48" fill="#475467" font-size="28">初始报价影响谈判空间</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 司法判决</text>
+        <text x="0" y="48" fill="#475467" font-size="28">量刑建议影响最终裁决</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 绩效评估</text>
+        <text x="0" y="48" fill="#475467" font-size="28">历史数据限制评价客观性</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 投资决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">买入价格影响止损判断</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 主动设定有利锚点</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 建立客观评估标准</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 被无关数字影响判断</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 调整幅度不足</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">框架效应 (#29)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">对比效应 (#37)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="razorBlade" d="M0 4 L12 0 L24 4 L12 8 Z" fill="#7F56D9"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="600">MODEL #99</text>
+    <text x="260" y="38" fill="#475467" font-size="26">医学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">行为归因决策树</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 决策路径 -->
+      <path d="M-300 0 Q0 -100 300 0" stroke="#E4E7EC" stroke-width="2" fill="none"/>
+      <path d="M-300 0 Q0 100 300 0" stroke="#E4E7EC" stroke-width="2" fill="none"/>
+      
+      <!-- 左侧错误路径 -->
+      <g transform="translate(-240 -60)">
+        <circle r="60" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#1D2939" font-size="26">恶意揣测</text>
+        <text x="0" y="24" text-anchor="middle" fill="#F04438" font-size="26">✗ 高冲突</text>
+      </g>
+      
+      <!-- 右侧正确路径 -->
+      <g transform="translate(240 -60)">
+        <circle r="60" fill="#ECFDF3" stroke="#6CE9A6" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" fill="#1D2939" font-size="26">善意推定</text>
+        <text x="0" y="24" text-anchor="middle" fill="#12B76A" font-size="26">✓ 低冲突</text>
+      </g>
+      
+      <!-- 剃刀切割线 -->
+      <path d="M-180 40 L180 -40" stroke="#7F56D9" stroke-width="4" stroke-dasharray="8 8"/>
+      <use href="#razorBlade" transform="translate(180 -40)"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939" font-size="72" font-weight="600">汉隆剃刀</text>
+    <text text-anchor="middle" fill="#667085" font-size="40" y="80">Hanlon's Razor</text>
+  </g>
+
+  <!-- 概念解释 -->
+  <text x="540" y="880" text-anchor="middle" fill="#475467" font-size="32">
+    在解释他人行为时，优先考虑愚蠢、错误或情境因素，
+  </text>
+  <text x="540" y="920" text-anchor="middle" fill="#475467" font-size="32">
+    而非恶意假设的思维原则。
+  </text>
+
+  <!-- 专家洞见 -->
+  <text x="540" y="1020" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    "能解释为愚蠢的，不要归咎于恶意。"
+  </text>
+  <text x="540" y="1120" text-anchor="middle" fill="#667085" font-size="28">
+    —— 罗伯特·汉隆
+  </text>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 团队管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">理解成员失误动机</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 人际沟通</text>
+        <text x="0" y="48" fill="#475467" font-size="28">减少无谓冲突假设</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 舆论分析</text>
+        <text x="0" y="48" fill="#475467" font-size="28">解读公共事件动因</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 冲突解决</text>
+        <text x="0" y="48" fill="#475467" font-size="28">寻找非对抗性解释</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 保持同理心视角</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 分析客观情境因素</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度揣测主观动机</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视信息不对称</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">归因理论 (#40)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">认知偏差 (#35)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">同理心 (#45)</text>
+      </g>
+    </g>
+  </g>
+</svg>

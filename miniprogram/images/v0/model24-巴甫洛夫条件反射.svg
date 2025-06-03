@@ -1,0 +1,145 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="conditioningArrow" d="M0 0 L12 6 L0 12" fill="#7F56D9"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#7F56D9"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #24</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形区域 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">经典条件反射机制</text>
+
+    <g transform="translate(444 200)">
+      <!-- 实验装置可视化 -->
+      <g transform="translate(-200 0)">
+        <rect width="160" height="160" rx="24" fill="#F4EBFF"/>
+        <image x="30" y="30" width="100" height="100" xlink:href="https://example.com/bell-icon.svg"/>
+      </g>
+      
+      <path d="M-80 20 L80 20" stroke="#7F56D9" stroke-width="3" marker-end="url(#conditioningArrow)"/>
+      
+      <g transform="translate(200 0)">
+        <rect width="160" height="160" rx="24" fill="#F4EBFF"/>
+        <image x="30" y="30" width="100" height="100" xlink:href="https://example.com/dog-icon.svg"/>
+        <path d="M80 120 Q100 140 120 120" stroke="#F04438" fill="none" stroke-width="4"/>
+      </g>
+
+      <!-- 时间轴 -->
+      <g transform="translate(0 120)">
+        <path d="M-320 0 L320 0" stroke="#E4E7EC" stroke-width="2"/>
+        <g transform="translate(-240 -40)">
+          <circle r="8" fill="#12B76A"/>
+          <text x="20" y="6" font-size="24">中性刺激</text>
+        </g>
+        <g transform="translate(0 -40)">
+          <circle r="8" fill="#F79009"/>
+          <text x="20" y="6" font-size="24">无条件刺激</text>
+        </g>
+        <g transform="translate(240 -40)">
+          <circle r="8" fill="#F04438"/>
+          <text x="20" y="6" font-size="24">条件反应</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">条件反射</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Pavlovian Conditioning</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过中性刺激与无条件刺激的重复关联，最终使中性刺激单独引发条件反应的行为学习机制。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "行为的塑造就像钟摆与食物建立的神经连接，揭示着最基础的学习规律。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 伊万·巴甫洛夫</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 行为训练</text>
+        <text x="0" y="48" fill="#475467" font-size="28">习惯养成机制设计</text>
+      </g>
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 市场营销</text>
+        <text x="0" y="48" fill="#475467" font-size="28">品牌联想塑造</text>
+      </g>
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 教育心理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">学习反馈系统</text>
+      </g>
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 用户体验</text>
+        <text x="0" y="48" fill="#475467" font-size="28">交互模式培养</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立清晰刺激关联</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 保持强化一致性</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度泛化反应</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视消退机制</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">激励效应 (#21)</text>
+      </g>
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">框架效应 (#29)</text>
+      </g>
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">承诺一致性 (#33)</text>
+      </g>
+    </g>
+  </g>
+</svg>

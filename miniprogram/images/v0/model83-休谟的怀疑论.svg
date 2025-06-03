@@ -1,0 +1,141 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="doubtArrow" d="M0 0 L12 6 L0 12" fill="#4B5563"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #83</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">哲学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">怀疑循环机制</text>
+    
+    <!-- 三重质疑循环 -->
+    <g transform="translate(444 220)">
+      <path d="M-200 0 A200 200 0 1 0 200 0" stroke="#E4E7EC" fill="none" stroke-width="2"/>
+      <path d="M-160 0 A160 160 0 1 0 160 0" stroke="#E4E7EC" fill="none" stroke-width="2"/>
+      <path d="M-120 0 A120 120 0 1 0 120 0" stroke="#E4E7EC" fill="none" stroke-width="2"/>
+      
+      <!-- 质疑节点 -->
+      <g transform="rotate(-120)">
+        <circle cx="200" cy="0" r="40" fill="#F3F4F6" stroke="#4B5563" stroke-width="2"/>
+        <text x="200" y="0" text-anchor="middle" dy="6" fill="#1D2939" font-size="28">观察</text>
+      </g>
+      <g transform="rotate(0)">
+        <circle cx="200" cy="0" r="40" fill="#F3F4F6" stroke="#4B5563" stroke-width="2"/>
+        <text x="200" y="0" text-anchor="middle" dy="6" fill="#1D2939" font-size="28">质疑</text>
+      </g>
+      <g transform="rotate(120)">
+        <circle cx="200" cy="0" r="40" fill="#F3F4F6" stroke="#4B5563" stroke-width="2"/>
+        <text x="200" y="0" text-anchor="middle" dy="6" fill="#1D2939" font-size="28">验证</text>
+      </g>
+      
+      <!-- 中心问号 -->
+      <path d="M-24 48 Q0 60 24 48 L12 0 Q0 -12 -12 0 L-24 48" fill="#4B5563"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">休谟的怀疑论</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Hume's Skepticism</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      强调经验主义与因果关系质疑，主张通过持续循环验证接近真理，警惕未经检验的假设成为认知陷阱
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "因果关系只是心理习惯的产物，而非理性的必然推论"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 大卫·休谟</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#4B5563" font-size="32" font-weight="600">• 科学方法论</text>
+        <text x="0" y="48" fill="#475467" font-size="28">实验设计的可证伪性检验</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#4B5563" font-size="32" font-weight="600">• 法律审查</text>
+        <text x="0" y="48" fill="#475467" font-size="28">证据链的因果关系验证</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#4B5563" font-size="32" font-weight="600">• 商业决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">市场假设的持续压力测试</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#4B5563" font-size="32" font-weight="600">• 认知升级</text>
+        <text x="0" y="48" fill="#475467" font-size="28">直觉偏见的系统性排查</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F3F4F6" stroke="#4B5563" stroke-width="2"/>
+    <text x="40" y="64" fill="#1D2939" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立假设验证机制</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 区分事实与推论</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 陷入无限怀疑循环</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 否定经验积累价值</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#4B5563"/>
+        <text x="40" y="24" fill="#475467" font-size="24">奥卡姆剃刀 (#79)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">辩证法 (#81)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">不可知论 (#85)</text>
+      </g>
+    </g>
+  </g>
+</svg>

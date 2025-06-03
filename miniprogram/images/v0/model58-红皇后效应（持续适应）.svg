@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="600">MODEL #58</text>
+    <text x="260" y="38" fill="#475467" font-size="26">生物学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">进化竞赛动态</text>
+    
+    <!-- 双螺旋赛道 -->
+    <g transform="translate(444 240)">
+      <!-- 基础螺旋 -->
+      <path d="M-300 0 Q0 -200 300 0 Q0 200 -300 0" fill="none" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 竞争者A -->
+      <g transform="rotate(-20)">
+        <path d="M0 0 L60 0" stroke="#7F56D9" stroke-width="4" marker-end="url(#arrowhead)"/>
+        <circle cx="30" cy="0" r="20" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="30" y="5" text-anchor="middle" fill="#7F56D9" font-size="24">A</text>
+      </g>
+      
+      <!-- 竞争者B -->
+      <g transform="rotate(160)">
+        <path d="M0 0 L60 0" stroke="#7F56D9" stroke-width="4" marker-end="url(#arrowhead)"/>
+        <circle cx="30" cy="0" r="20" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="30" y="5" text-anchor="middle" fill="#7F56D9" font-size="24">B</text>
+      </g>
+      
+      <!-- 说明标签 -->
+      <g transform="translate(-200 -120)">
+        <rect width="160" height="60" rx="8" fill="#F4EBFF" stroke="#7F56D9"/>
+        <text x="80" y="38" text-anchor="middle" fill="#1D2939" font-size="24">持续进化</text>
+      </g>
+      
+      <g transform="translate(40 120)">
+        <rect width="160" height="60" rx="8" fill="#F4EBFF" stroke="#7F56D9"/>
+        <text x="80" y="38" text-anchor="middle" fill="#1D2939" font-size="24">相对地位</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939" font-size="72" font-weight="600">红皇后效应</text>
+    <text text-anchor="middle" fill="#667085" font-size="40" y="80">Red Queen Effect</text>
+  </g>
+
+  <!-- 概念解释 -->
+  <text x="540" y="880" text-anchor="middle" fill="#475467" font-size="32">
+    在竞争环境中，为了维持相对优势，
+  </text>
+  <text x="540" y="920" text-anchor="middle" fill="#475467" font-size="32">
+    参与者必须不断进化和改进以保持当前地位。
+  </text>
+
+  <!-- 专家洞见 -->
+  <text x="540" y="1020" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    "在这里，你必须不停地奔跑，才能留在原地。
+  </text>
+  <text x="540" y="1060" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    如果你想到达别的地方，必须跑得比现在更快。"
+  </text>
+  <text x="540" y="1120" text-anchor="middle" fill="#667085" font-size="28">
+    —— 刘易斯·卡罗尔《爱丽丝镜中奇遇记》
+  </text>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 竞争战略</text>
+        <text x="0" y="48" fill="#475467" font-size="28">持续创新机制</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 人才发展</text>
+        <text x="0" y="48" fill="#475467" font-size="28">能力提升体系</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 产品迭代</text>
+        <text x="0" y="48" fill="#475467" font-size="28">快速响应机制</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 组织变革</text>
+        <text x="0" y="48" fill="#475467" font-size="28">适应性提升</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立快速反馈机制</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 保持创新节奏</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度消耗资源</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视战略定位</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">进化论 (#57)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">军备竞赛 (#59)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">适者生存 (#56)</text>
+      </g>
+    </g>
+  </g>
+</svg>

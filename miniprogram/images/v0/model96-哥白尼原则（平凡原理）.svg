@@ -1,0 +1,136 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <linearGradient id="spaceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #96</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">天文学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">宇宙定位演示</text>
+    
+    <!-- 星系示意图 -->
+    <g transform="translate(444 200)">
+      <circle r="120" fill="url(#spaceGradient)" stroke="#64748B"/>
+      <g transform="rotate(-30)">
+        <!-- 轨道环 -->
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+        <circle cx="0" cy="0" r="160" fill="none" stroke="#CBD5E1" stroke-width="2"/>
+        <!-- 行星 -->
+        <g transform="rotate(45)">
+          <circle cx="80" cy="0" r="16" fill="#7C3AED"/>
+          <circle cx="160" cy="0" r="20" fill="#38BDF8"/>
+        </g>
+        <!-- 地球标识 -->
+        <g transform="rotate(120)">
+          <circle cx="80" cy="0" r="18" fill="#10B981"/>
+          <path d="M-8 0 L8 0 M0 -8 L0 8" stroke="#FFF" stroke-width="2"/>
+        </g>
+      </g>
+      <text x="0" y="160" text-anchor="middle" fill="#64748B" font-size="28">无特殊观测位置</text>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">哥白尼原则</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Copernican Principle</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      主张观测者在宇宙中不具有特殊地位，提醒我们避免自我中心偏见，以更客观的视角评估自身处境。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "宇宙的浩瀚提醒我们，人类在时空中的位置并不比一粒尘埃更重要。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 卡尔·萨根</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 宇宙学</text>
+        <text x="0" y="48" fill="#475467" font-size="28">天体分布规律研究</text>
+      </g>
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 商业决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">避免市场中心化假设</text>
+      </g>
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 风险评估</text>
+        <text x="0" y="48" fill="#475467" font-size="28">消除特殊性偏见</text>
+      </g>
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 社会科学</text>
+        <text x="0" y="48" fill="#475467" font-size="28">文化相对性认知</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 保持客观视角</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 警惕人类中心主义</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 高估独特性</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视统计规律</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">路径依赖 (#86)</text>
+      </g>
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">均值回归 (#8)</text>
+      </g>
+    </g>
+  </g>
+</svg>

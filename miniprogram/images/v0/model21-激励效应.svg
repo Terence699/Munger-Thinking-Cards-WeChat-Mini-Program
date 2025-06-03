@@ -1,0 +1,136 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #21</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">激励驱动系统</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 正向激励 -->
+      <g transform="translate(-220 0)">
+        <rect width="240" height="160" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="120" y="50" text-anchor="middle" fill="#1D2939" font-size="28">奖金激励</text>
+        <path d="M120 80 L120 120 M100 100 L120 120 L140 100" stroke="#7F56D9" stroke-width="3"/>
+        <text x="120" y="140" text-anchor="middle" fill="#7F56D9" font-size="26">+37%效率</text>
+      </g>
+      
+      <!-- 负向激励 -->
+      <g transform="translate(220 0)">
+        <rect width="240" height="160" rx="16" fill="#FEF0F0" stroke="#F04438" stroke-width="2"/>
+        <text x="120" y="50" text-anchor="middle" fill="#1D2939" font-size="28">惩罚机制</text>
+        <path d="M120 80 L120 120 M100 100 L120 120 L140 100" stroke="#F04438" stroke-width="3" transform="rotate(180 120 100)"/>
+        <text x="120" y="140" text-anchor="middle" fill="#F04438" font-size="26">-42%失误</text>
+      </g>
+      
+      <!-- 行为箭头 -->
+      <path d="M-340 0 L-280 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M280 0 L340 0" stroke="#F04438" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <text x="0" y="-80" text-anchor="middle" fill="#667085" font-size="28">行为强化方向</text>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">激励效应</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Incentive Effect</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过设计合理的奖励与惩罚机制，系统性引导个体或组织的行为模式，是驱动行为改变最根本的底层逻辑。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "当你想要说服别人，要诉诸利益，而非理性。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 查理·芒格</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 企业管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">员工绩效奖金设计</text>
+      </g>
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 教育体系</text>
+        <text x="0" y="48" fill="#475467" font-size="28">学习成就奖励机制</text>
+      </g>
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 公共政策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">环保税收激励机制</text>
+      </g>
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 个人成长</text>
+        <text x="0" y="48" fill="#475467" font-size="28">习惯养成奖励系统</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 激励与目标精准对齐</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 即时反馈与长期激励结合</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 激励扭曲核心目标</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视内在动机培养</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">损失厌恶 (#22)</text>
+      </g>
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">双曲贴现 (#23)</text>
+      </g>
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">承诺一致性 (#33)</text>
+      </g>
+    </g>
+  </g>
+</svg>

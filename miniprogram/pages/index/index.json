@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "card-viewer": "../../components/card-viewer/card-viewer"
+  },
+  "navigationBarTitleText": "芒格思维卡片"
+}

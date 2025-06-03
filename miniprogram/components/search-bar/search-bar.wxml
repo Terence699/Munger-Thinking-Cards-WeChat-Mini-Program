@@ -1,0 +1,63 @@
+<!-- 搜索栏组件 -->
+<view class="search-bar">
+  <!-- 搜索输入区域 -->
+  <view class="search-container">
+    <view class="search-input-wrapper">
+      <view class="search-icon">🔍</view>
+      <input 
+        class="search-input" 
+        type="text"
+        placeholder="搜索思维模型..."
+        placeholder-class="search-placeholder"
+        value="{{searchValue}}"
+        bindinput="onSearchInput"
+        bindconfirm="onSearchConfirm"
+        bindfocus="onSearchFocus"
+        bindblur="onSearchBlur"
+        adjust-position="{{false}}"
+      />
+      <view 
+        class="clear-icon {{searchValue ? 'show' : 'hide'}}" 
+        bindtap="onClearSearch"
+      >
+        ✕
+      </view>
+    </view>
+  </view>
+
+  <!-- 搜索结果下拉列表 -->
+  <view class="search-results {{showResults ? 'show' : 'hide'}}">
+    <scroll-view 
+      scroll-y="{{true}}" 
+      class="results-scroll"
+      wx:if="{{searchResults.length > 0}}"
+    >
+      <view 
+        class="result-item" 
+        wx:for="{{searchResults}}" 
+        wx:key="id"
+        bindtap="onSelectResult"
+        data-card="{{item}}"
+      >
+        <view class="result-content">
+          <view class="result-title">{{item.name}}</view>
+          <view class="result-subtitle">Model {{item.id}} / 100</view>
+        </view>
+        <view class="result-arrow">›</view>
+      </view>
+    </scroll-view>
+    
+    <!-- 无搜索结果 -->
+    <view class="no-results" wx:if="{{searchValue && searchResults.length === 0}}">
+      <view class="no-results-icon">🤔</view>
+      <view class="no-results-text">没有找到相关的思维模型</view>
+      <view class="no-results-hint">试试其他关键词吧</view>
+    </view>
+  </view>
+
+  <!-- 遮罩层 -->
+  <view 
+    class="search-mask {{showResults ? 'show' : 'hide'}}" 
+    bindtap="onCloseMask"
+  ></view>
+</view> 

@@ -1,0 +1,159 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #3</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">数学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">贝叶斯更新过程</text>
+    
+    <g transform="translate(444 200)">
+      <path d="M-360 0 L360 0" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 先验概率 -->
+      <g transform="translate(-280 0)">
+        <circle r="60" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" font-size="26">先验概率</text>
+        <text x="0" y="24" text-anchor="middle" fill="#7F56D9" font-size="26">P(H)=30%</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">初始信念值</text>
+        </g>
+      </g>
+
+      <!-- 似然概率 -->
+      <g transform="translate(0 0)">
+        <circle r="60" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" font-size="26">似然概率</text>
+        <text x="0" y="24" text-anchor="middle" fill="#7F56D9" font-size="26">P(E|H)=60%</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">证据强度</text>
+        </g>
+      </g>
+
+      <!-- 后验概率 -->
+      <g transform="translate(280 0)">
+        <circle r="60" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="0" y="-12" text-anchor="middle" font-size="26">后验概率</text>
+        <text x="0" y="24" text-anchor="middle" fill="#7F56D9" font-size="26">P(H|E)=75%</text>
+        <g transform="translate(0 90)">
+          <rect width="180" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+          <text x="90" y="38" text-anchor="middle" fill="#475467" font-size="22">修正后概率</text>
+        </g>
+      </g>
+
+      <!-- 连接箭头 -->
+      <path d="M-200 0 L-120 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M80 0 L160 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+      <!-- 公式 -->
+      <g transform="translate(0 -90)">
+        <rect width="360" height="60" rx="8" fill="white" stroke="#E4E7EC"/>
+        <text x="180" y="40" text-anchor="middle" fill="#7F56D9" font-size="24">P(H|E) ∝ P(H) × P(E|H)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">贝叶斯推理</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085">Bayesian Reasoning</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; text-align:center; line-height:1.5; font-family:Arial">
+      通过不断整合新证据来修正概率认知的数学工具，实现动态化的不确定性决策
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; text-align:center; font-style:italic; line-height:1.6; font-family:Georgia">
+      "概率论是认知的显微镜，贝叶斯推理就是它的调焦旋钮"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 克里斯托弗·毕晓普</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 风险投资</text>
+        <text x="0" y="48" fill="#475467" font-size="28">创业公司成功概率评估</text>
+      </g>
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 疾病筛查</text>
+        <text x="0" y="48" fill="#475467" font-size="28">检测结果误报率分析</text>
+      </g>
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 司法审判</text>
+        <text x="0" y="48" fill="#475467" font-size="28">证据链概率关联分析</text>
+      </g>
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 机器学习</text>
+        <text x="0" y="48" fill="#475467" font-size="28">贝叶斯神经网络优化</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立量化概率基准</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 持续迭代更新认知</text>
+    
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视基础概率分布</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 混淆条件概率方向</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    <g transform="translate(48 70)">
+      <g>
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">均值回归 (#8)</text>
+      </g>
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">信息不对称 (#51)</text>
+      </g>
+    </g>
+  </g>
+</svg>

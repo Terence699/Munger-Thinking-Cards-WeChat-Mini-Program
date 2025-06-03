@@ -1,0 +1,142 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <path id="spreadArrow" d="M0 0 L12 6 L0 12" fill="#16B364"/>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #63</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">生物学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">传播网络拓扑</text>
+    
+    <!-- 病毒传播网络 -->
+    <g transform="translate(444 200)">
+      <!-- 中心节点 -->
+      <circle cx="0" cy="0" r="40" fill="#D1FADF" stroke="#16B364" stroke-width="3"/>
+      <text x="0" y="5" text-anchor="middle" fill="#1D2939" font-size="28">源点</text>
+      
+      <!-- 传播路径 -->
+      <g transform="rotate(-30)">
+        <path d="M0 0 Q 200 50 400 0" stroke="#D0F5BE" stroke-width="4" fill="none"/>
+        <circle cx="400" cy="0" r="24" fill="#86E2AB"/>
+      </g>
+      <g transform="rotate(30)">
+        <path d="M0 0 Q 200 -80 400 0" stroke="#D0F5BE" stroke-width="4" fill="none"/>
+        <circle cx="400" cy="0" r="24" fill="#86E2AB"/>
+      </g>
+      <g transform="rotate(90)">
+        <path d="M0 0 Q 200 100 400 0" stroke="#D0F5BE" stroke-width="4" fill="none"/>
+        <circle cx="400" cy="0" r="24" fill="#86E2AB"/>
+      </g>
+      
+      <!-- 指数增长曲线 -->
+      <path d="M-300 100 Q -150 30 0 100 T 300 100" stroke="#16B364" stroke-width="4" fill="none"/>
+      <text x="0" y="180" text-anchor="middle" fill="#16B364" font-size="28">R0 >1 时的指数增长</text>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">病毒式传播</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Viral Spread Model</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过社交网络实现指数级扩散的传播机制，核心要素包括传播系数(R0)、网络结构和内容传染性。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "真正具有传染力的思想会像病毒一样突破人们的心理免疫系统"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 马尔科姆·格拉德威尔</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#16B364" font-size="32" font-weight="600">• 社交媒体</text>
+        <text x="0" y="48" fill="#475467" font-size="28">内容裂变传播机制</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#16B364" font-size="32" font-weight="600">• 市场营销</text>
+        <text x="0" y="48" fill="#475467" font-size="28">口碑营销放大器</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#16B364" font-size="32" font-weight="600">• 流行病学</text>
+        <text x="0" y="48" fill="#475467" font-size="28">疾病传播预测模型</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#16B364" font-size="32" font-weight="600">• 信息扩散</text>
+        <text x="0" y="48" fill="#475467" font-size="28">谣言传播路径分析</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#ECFDF3" stroke="#6CE9A6" stroke-width="2"/>
+    <text x="40" y="64" fill="#16B364" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 设计高传播性内容</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 利用社交网络结构</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视传播衰减因子</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 过度依赖单一节点</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#16B364"/>
+        <text x="40" y="24" fill="#475467" font-size="24">网络效应 (#64)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">规模效应 (#49)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">群体智慧 (#60)</text>
+      </g>
+    </g>
+  </g>
+</svg>

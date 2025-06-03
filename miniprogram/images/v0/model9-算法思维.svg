@@ -1,0 +1,148 @@
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7F56D9"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #9</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">数学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">算法流程分解</text>
+    
+    <!-- 流程图结构 -->
+    <g transform="translate(444 200)">
+      <path d="M-300 0 L300 0" stroke="#E4E7EC" stroke-width="2"/>
+      
+      <!-- 输入模块 -->
+      <g transform="translate(-300 0)">
+        <rect width="160" height="100" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="30" text-anchor="middle" fill="#1D2939" font-size="26">输入</text>
+        <text x="80" y="60" text-anchor="middle" fill="#7F56D9" font-size="24">初始数据</text>
+      </g>
+      
+      <!-- 处理模块 -->
+      <g transform="translate(0 0)">
+        <rect width="160" height="100" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="30" text-anchor="middle" fill="#1D2939" font-size="26">处理</text>
+        <text x="80" y="60" text-anchor="middle" fill="#7F56D9" font-size="24">逻辑运算</text>
+      </g>
+      
+      <!-- 输出模块 -->
+      <g transform="translate(300 0)">
+        <rect width="160" height="100" rx="16" fill="#F4EBFF" stroke="#7F56D9" stroke-width="2"/>
+        <text x="80" y="30" text-anchor="middle" fill="#1D2939" font-size="26">输出</text>
+        <text x="80" y="60" text-anchor="middle" fill="#7F56D9" font-size="24">优化结果</text>
+      </g>
+      
+      <!-- 连接箭头 -->
+      <path d="M-220 0 L-160 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+      <path d="M80 0 L160 0" stroke="#7F56D9" stroke-width="3" marker-end="url(#arrowhead)"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">算法思维</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Algorithmic Thinking</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过结构化步骤分解复杂问题，建立可重复执行的解决方案框架，提升决策效率与系统可靠性。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "优秀的算法是计算思维的结晶，它教会我们如何优雅地解决问题。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 高德纳</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 计算机科学</text>
+        <text x="0" y="48" fill="#475467" font-size="28">数据结构与程序架构</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 运营管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">流程优化与效率提升</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 投资决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">量化交易策略设计</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 日常决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">行为模式系统化</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 明确终止条件</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 评估时间复杂度</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度工程化</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽略边界条件</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">决策树分析 (#4)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">系统动力学 (#70)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">模块化设计 (#73)</text>
+      </g>
+    </g>
+  </g>
+</svg>

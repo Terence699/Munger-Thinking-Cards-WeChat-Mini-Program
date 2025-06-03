@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="600">MODEL #28</text>
+    <text x="260" y="38" fill="#475467" font-size="26">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">自利归因示意图</text>
+    
+    <!-- 对比图示 -->
+    <g transform="translate(200 120)">
+      <!-- 成功归因 -->
+      <rect x="0" y="0" width="200" height="160" rx="12" fill="#F4EBFF" stroke="#7F56D9"/>
+      <text x="100" y="50" text-anchor="middle" fill="#1D2939" font-size="26">成功</text>
+      <text x="100" y="100" text-anchor="middle" fill="#7F56D9" font-size="28">归因于内部</text>
+      <text x="100" y="130" text-anchor="middle" fill="#7F56D9" font-size="24">(能力/努力)</text>
+      
+      <!-- 失败归因 -->
+      <rect x="480" y="0" width="200" height="160" rx="12" fill="#FEE4E2" stroke="#F04438"/>
+      <text x="580" y="50" text-anchor="middle" fill="#1D2939" font-size="26">失败</text>
+      <text x="580" y="100" text-anchor="middle" fill="#F04438" font-size="28">归因于外部</text>
+      <text x="580" y="130" text-anchor="middle" fill="#F04438" font-size="24">(环境/运气)</text>
+      
+      <!-- 对比箭头 -->
+      <path d="M240 80 L440 80" stroke="#667085" stroke-width="2"/>
+      <path d="M435 75 L440 80 L435 85" fill="none" stroke="#667085" stroke-width="2"/>
+      <text x="340" y="70" text-anchor="middle" fill="#475467" font-size="24">归因对比</text>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939" font-size="72" font-weight="600">自利性偏差</text>
+    <text text-anchor="middle" fill="#667085" font-size="40" y="80">Self-serving Bias</text>
+  </g>
+
+  <!-- 概念解释 -->
+  <text x="540" y="880" text-anchor="middle" fill="#475467" font-size="32">
+    人们倾向于将成功归因于自身能力和努力，
+  </text>
+  <text x="540" y="920" text-anchor="middle" fill="#475467" font-size="32">
+    而将失败归因于外部环境和运气因素的心理倾向。
+  </text>
+
+  <!-- 专家洞见 -->
+  <text x="540" y="1020" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    "自利性偏差是人类维护自尊的一种防御机制，
+  </text>
+  <text x="540" y="1060" text-anchor="middle" fill="#475467" font-size="36" font-style="italic">
+    但过度使用会阻碍个人成长和客观认知。"
+  </text>
+  <text x="540" y="1120" text-anchor="middle" fill="#667085" font-size="28">
+    —— 弗里茨·海德尔
+  </text>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 自我认知</text>
+        <text x="0" y="48" fill="#475467" font-size="28">客观评估成败原因</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 团队管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">平衡反馈与激励</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 教育培训</text>
+        <text x="0" y="48" fill="#475467" font-size="28">培养全面归因思维</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 心理咨询</text>
+        <text x="0" y="48" fill="#475467" font-size="28">调整认知偏差</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立客观评估体系</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 多角度分析原因</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 过度自我保护</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视内在改进空间</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">确认性偏差 (#12)</text>
+      </g>
+      
+      <g transform="translate(320 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">基本归因谬误 (#45)</text>
+      </g>
+      
+      <g transform="translate(640 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">过度自信效应 (#37)</text>
+      </g>
+    </g>
+  </g>
+</svg>

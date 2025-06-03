@@ -1,0 +1,136 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon fill="#7F56D9" points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #7</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">数学思维模型</text>
+  </g>
+
+  <!-- 核心图形区域 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">假设检验可视化</text>
+
+    <!-- 正态分布曲线 -->
+    <path d="M144 220 Q444 100 744 220" fill="none" stroke="#7F56D9" stroke-width="4"/>
+    
+    <!-- 置信区间 -->
+    <path d="M344 180 L344 260" stroke="#667085" stroke-width="2"/>
+    <text x="344" y="280" text-anchor="middle" fill="#475467" font-size="24">μ</text>
+    
+    <!-- 拒绝域 -->
+    <path d="M144 220 L144 260 L244 260 L244 220" fill="#FEE4E2" stroke="#F04438"/>
+    <path d="M644 220 L644 260 L744 260 L744 220" fill="#FEE4E2" stroke="#F04438"/>
+    <text x="194" y="240" text-anchor="middle" fill="#F04438" font-size="24">α=0.025</text>
+    <text x="694" y="240" text-anchor="middle" fill="#F04438" font-size="24">α=0.025</text>
+    
+    <!-- 样本数据点 -->
+    <circle cx="500" cy="200" r="8" fill="#12B76A"/>
+    <text x="520" y="210" fill="#12B76A" font-size="24">p=0.03</text>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">统计显著性</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Statistical Significance</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      判断观察结果是否具有统计学意义的分析方法，通过p值与显著性水平的比较排除随机因素干扰。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "统计显著性告诉我们差异的真实性，但永远不能说明差异的重要性。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 罗纳德·费舍尔</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 科学实验</text>
+        <text x="0" y="48" fill="#475467" font-size="28">药物有效性验证</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• A/B测试</text>
+        <text x="0" y="48" fill="#475467" font-size="28">方案效果对比分析</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 市场研究</text>
+        <text x="0" y="48" fill="#475467" font-size="28">消费者行为差异检测</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 质量控制</text>
+        <text x="0" y="48" fill="#475467" font-size="28">生产异常波动识别</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 预设显著性水平α值</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 结合效应量综合分析</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• p值篡改(p-hacking)</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 忽视多重比较谬误</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">大数定律 (#6)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">均值回归 (#8)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,138 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <linearGradient id="confidenceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEE4E2"/>
+      <stop offset="100%" stop-color="#FEF3F2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#7F56D9"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #31</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">认知偏差可视化</text>
+    
+    <!-- 信心标尺 -->
+    <g transform="translate(444 200)">
+      <path d="M-300 0 L300 0" stroke="#E4E7EC" stroke-width="2"/>
+      <path d="M-300 0 L300 0" stroke="#7F56D9" stroke-width="4" stroke-dasharray="0 200 400"/>
+      
+      <g transform="translate(-200 -50)">
+        <rect width="400" height="100" rx="12" fill="url(#confidenceGradient)"/>
+        <text x="200" y="40" text-anchor="middle" fill="#D92D20" font-size="32" font-weight="600">80% 自信度</text>
+        <text x="200" y="80" text-anchor="middle" fill="#667085" font-size="24">实际准确率仅 50%</text>
+      </g>
+      
+      <!-- 警示图标 -->
+      <g transform="translate(260 0)">
+        <circle r="40" fill="#FEE4E2" stroke="#F04438" stroke-width="2"/>
+        <path d="M-15 -20 L15 -20 0 20" fill="#F04438" transform="scale(1.2)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">过度自信效应</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Overconfidence Effect</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      系统性高估自身知识准确性或预测能力的认知偏差，表现为判断区间过窄和决策确定性过高。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "人类最致命的认知缺陷，就是无法客观评估自己的真实能力水平。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 丹尼尔·卡尼曼</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#D92D20" font-size="32" font-weight="600">• 金融投资</text>
+        <text x="0" y="48" fill="#475467" font-size="28">过度交易与风险误判</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#D92D20" font-size="32" font-weight="600">• 医疗诊断</text>
+        <text x="0" y="48" fill="#475467" font-size="28">误诊率的高估与低估</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#D92D20" font-size="32" font-weight="600">• 企业管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">战略决策的确定性幻觉</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#D92D20" font-size="32" font-weight="600">• 创业决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">成功概率的非理性预估</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#FEF3F2" stroke="#FDA29B" stroke-width="2"/>
+    <text x="40" y="64" fill="#D92D20" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立概率化思维框架</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 实施预测结果追踪</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FEF3F2" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#D92D20" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视基础概率数据</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 混淆信心与能力边界</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">邓宁-克鲁格效应 (#27)</text>
+      </g>
+      
+      <g transform="translate(300 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">可得性偏差 (#39)</text>
+      </g>
+      
+      <g transform="translate(600 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">逆向思维 (#35)</text>
+      </g>
+    </g>
+  </g>
+</svg>

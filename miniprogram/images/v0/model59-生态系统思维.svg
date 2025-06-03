@@ -1,0 +1,151 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#12B76A"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #59</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">生物学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">生态系统能量流动</text>
+    
+    <g transform="translate(444 200)">
+      <!-- 太阳图标 -->
+      <g transform="translate(-240 -60)">
+        <circle r="40" fill="#FDB022"/>
+        <path d="M-25 0 L25 0 M0 -25 L0 25 M-18-18 L18 18 M-18 18 L18 -18" stroke="#B54708" stroke-width="3"/>
+      </g>
+      
+      <!-- 生产者 -->
+      <g transform="translate(-160 60)">
+        <rect width="120" height="80" rx="12" fill="#D1FADF"/>
+        <text x="60" y="30" text-anchor="middle" fill="#067647" font-size="24">植物</text>
+        <path d="M0 40 L-80 0" stroke="#12B76A" stroke-width="3" marker-end="url(#arrowhead)"/>
+      </g>
+
+      <!-- 消费者 -->
+      <g transform="translate(0 60)">
+        <rect width="120" height="80" rx="12" fill="#FEE4E2"/>
+        <text x="60" y="30" text-anchor="middle" fill="#B42318" font-size="24">动物</text>
+        <path d="M-60 40 L60 40" stroke="#F04438" stroke-width="3" marker-end="url(#arrowhead)"/>
+      </g>
+
+      <!-- 分解者 -->
+      <g transform="translate(160 60)">
+        <rect width="120" height="80" rx="12" fill="#EFF8FF"/>
+        <text x="60" y="30" text-anchor="middle" fill="#175CD3" font-size="24">微生物</text>
+        <path d="M60 40 L140 0" stroke="#2E90FA" stroke-width="3" marker-end="url(#arrowhead)"/>
+      </g>
+
+      <!-- 循环箭头 -->
+      <path d="M240 100 A100 60 0 1 0 240 180" fill="none" stroke="#667085" stroke-width="3" stroke-dasharray="8 8"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">生态系统思维</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085" font-family="Arial">Ecosystem Thinking</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family: Arial">
+      通过观察生物群落与环境的相互作用关系，理解复杂系统中各要素的共生演化与动态平衡机制。
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family: Georgia">
+      "真正的智慧在于理解万物互联的本质。"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 约翰·缪尔</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#12B76A" font-size="32" font-weight="600">• 商业战略</text>
+        <text x="0" y="48" fill="#475467" font-size="28">构建价值网络协同</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#12B76A" font-size="32" font-weight="600">• 城市规划</text>
+        <text x="0" y="48" fill="#475467" font-size="28">基础设施共生设计</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#12B76A" font-size="32" font-weight="600">• 组织管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">团队协同进化机制</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#12B76A" font-size="32" font-weight="600">• 环境保护</text>
+        <text x="0" y="48" fill="#475467" font-size="28">生物多样性保护</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#ECFDF3" stroke="#6CE9A6" stroke-width="2"/>
+    <text x="40" y="64" fill="#067647" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 识别关键依存关系</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 保持动态平衡意识</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FEF3F2" stroke="#FECDCA" stroke-width="2"/>
+      <text x="40" y="64" fill="#B42318" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 忽视隐性反馈循环</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 局部优化损害整体</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">红皇后效应 (#58)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">群体智慧 (#60)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#2E90FA"/>
+        <text x="40" y="24" fill="#475467" font-size="24">自然选择 (#57)</text>
+      </g>
+    </g>
+  </g>
+</svg>

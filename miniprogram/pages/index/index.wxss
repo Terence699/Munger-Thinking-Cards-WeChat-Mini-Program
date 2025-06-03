@@ -1,0 +1,247 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  width: 80%;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.nickname-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-top: .5px solid rgba(0, 0, 0, 0.1);
+  border-bottom: .5px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.nickname-label {
+  width: 105px;
+}
+
+.nickname-input {
+  flex: 1;
+}
+
+/* 芒格思维卡片主页面样式 */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 卡片查看器区域 */
+card-viewer {
+  flex: 1;
+  width: 100%;
+  min-height: 0; /* 确保能正确缩放 */
+}
+
+/* 底部控制面板 */
+.control-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9); /* 进一步降低透明度，使其更轻盈 */
+  backdrop-filter: blur(16rpx);
+  padding: 8rpx 20rpx; /* 再压缩 */
+  padding-bottom: calc(8rpx + env(safe-area-inset-bottom)); /* 适配底部安全区 */
+  border-radius: 20rpx 20rpx 0 0; /* 更小的圆角 */
+  box-shadow: 0 -3rpx 15rpx rgba(0, 0, 0, 0.05);
+  z-index: 100; /* 确保在最上层 */
+}
+
+/* 模式切换区域 */
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  gap: 8rpx; /* 再压缩 */
+  margin-bottom: 8rpx; /* 再压缩 */
+}
+
+.mode-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rpx 16rpx; /* 再压缩 */
+  border-radius: 12rpx; /* 减小圆角 */
+  background: #f9fafb;
+  border: 1rpx solid transparent; /* 更细的边框 */
+  transition: all 0.1s ease;
+  min-width: 90rpx; /* 稍微减小最小宽度 */
+}
+
+.mode-item.active {
+  background: #eef2ff; /* 更淡的激活颜色 */
+  border-color: #818cf8;
+  transform: scale(1.01);
+}
+
+.mode-icon {
+  font-size: 22rpx; /* 再压缩 */
+  margin-bottom: 1rpx; /* 极致压缩间距 */
+}
+
+.mode-text {
+  font-size: 16rpx; /* 再压缩 */
+  color: #4b5563;
+  font-weight: 400; /* 调整字重 */
+}
+
+.mode-item.active .mode-text {
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+/* 操作按钮区域 */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rpx; /* 稍微减小间距 */
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rpx 6rpx; /* 再压缩 */
+  border-radius: 10rpx; /* 减小圆角 */
+  background: #ffffff;
+  border: 1rpx solid #f3f4f6;
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.04);
+  transition: all 0.1s ease;
+  font-size: 16rpx; /* 稍微减小字体 */
+  color: #4b5563;
+}
+
+.action-btn.primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.action-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-icon {
+  font-size: 26rpx; /* 再压缩 */
+  margin-bottom: 1rpx;
+}
+
+.btn-text {
+  font-size: 16rpx; /* 稍微减小字体 */
+  font-weight: 400;
+}
+
+.action-btn.primary .btn-text {
+  color: #ffffff;
+}
+
+/* 响应式设计 */
+@media (max-width: 380px) { /* 统一断点 */
+  .control-panel {
+    padding: 6rpx 18rpx;
+    padding-bottom: calc(6rpx + env(safe-area-inset-bottom));
+    border-radius: 18rpx 18rpx 0 0;
+  }
+  
+  .mode-switch {
+    margin-bottom: 6rpx;
+    gap: 6rpx;
+  }
+  
+  .mode-item {
+    min-width: 80rpx;
+    padding: 3rpx 12rpx;
+    border-radius: 10rpx;
+  }
+  
+  .mode-icon {
+    font-size: 20rpx;
+  }
+  
+  .mode-text {
+    font-size: 14rpx;
+  }
+  
+  .action-buttons {
+    gap: 4rpx;
+  }
+  
+  .action-btn {
+    padding: 6rpx 4rpx;
+    font-size: 14rpx;
+    border-radius: 8rpx;
+  }
+  
+  .btn-icon {
+    font-size: 24rpx;
+  }
+  
+  .btn-text {
+    font-size: 14rpx;
+  }
+}
+
+/* 动画效果 */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.mode-item:active,
+.action-btn:active {
+  animation: pulse 0.1s ease-in-out;
+}

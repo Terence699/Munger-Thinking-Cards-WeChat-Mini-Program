@@ -1,0 +1,131 @@
+
+
+<svg viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#FFFFFF"/>
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#f5f5f5" stroke-width="1.5"/>
+    </pattern>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon fill="#7F56D9" points="0 0, 10 3.5, 0 7"/>
+    </marker>
+  </defs>
+
+  <!-- 卡片底层 -->
+  <rect width="1080" height="1920" rx="48" fill="#FFFFFF"/>
+  <rect width="1080" height="1920" rx="48" fill="url(#subtleGrid)"/>
+
+  <!-- 学科标识 -->
+  <g transform="translate(96 80)">
+    <rect width="220" height="56" rx="12" fill="#1D2939"/>
+    <text x="110" y="38" text-anchor="middle" fill="#FFF" font-size="26" font-family="Arial" font-weight="600">MODEL #36</text>
+    <text x="260" y="38" fill="#475467" font-size="26" font-family="Arial">心理学思维模型</text>
+  </g>
+
+  <!-- 核心图形 -->
+  <g transform="translate(96 180)">
+    <rect width="888" height="400" rx="16" fill="#F9FAFB" stroke="#E4E7EC" stroke-width="2"/>
+    <text x="444" y="60" text-anchor="middle" fill="#1D2939" font-size="32" font-weight="600">得失感知失衡模型</text>
+    
+    <!-- 天平可视化 -->
+    <g transform="translate(444 240)">
+      <path d="M-200 60 L200 60" stroke="#E4E7EC" stroke-width="3"/>
+      <path d="M0 0 L0 120" stroke="#7F56D9" stroke-width="4"/>
+      <rect x="-240" y="40" width="80" height="80" rx="12" fill="#FEE4E2" stroke="#F04438"/>
+      <rect x="160" y="40" width="80" height="80" rx="12" fill="#D1FADF" stroke="#12B76A"/>
+      <text x="-200" y="120" text-anchor="middle" fill="#F04438" font-size="28">失去$100</text>
+      <text x="200" y="120" text-anchor="middle" fill="#12B76A" font-size="28">获得$100</text>
+      <path d="M-80 60 L-40 30 L-80 0" fill="#F04438"/>
+      <path d="M80 60 L40 30 L80 0" fill="#12B76A"/>
+    </g>
+  </g>
+
+  <!-- 标题系统 -->
+  <g transform="translate(540 680)">
+    <text text-anchor="middle" fill="#1D2939">
+      <tspan x="0" y="0" font-size="72" font-family="Arial" font-weight="bold">厌恶剥夺心理</tspan>
+      <tspan x="0" y="80" font-size="40" fill="#667085">Aversion to Deprivation</tspan>
+    </text>
+  </g>
+
+  <!-- 概念解释 -->
+  <foreignObject x="180" y="820" width="720" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:32px; line-height:1.5; text-align:center; font-family:Arial">
+      对失去已有事物的痛苦感知强度可达获得同等价值事物愉悦感的2倍以上，这种非对称心理反应深刻影响决策模式
+    </div>
+  </foreignObject>
+
+  <!-- 专家洞见 -->
+  <foreignObject x="180" y="960" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#475467; font-size:36px; line-height:1.6; text-align:center; font-style:italic; font-family:Georgia">
+      "失去100美元的痛苦需要获得200美元才能平衡，这是行为经济学的基石发现"
+      <div style="color:#667085; font-size:28px; margin-top:32px">—— 丹尼尔·卡尼曼</div>
+    </div>
+  </foreignObject>
+
+  <!-- 应用维度矩阵 -->
+  <g transform="translate(96 1200)">
+    <rect width="888" height="300" rx="32" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="60" fill="#1D2939" font-size="36" font-weight="600" font-family="Arial">模型应用维度</text>
+    
+    <g transform="translate(48 112)">
+      <g>
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 消费决策</text>
+        <text x="0" y="48" fill="#475467" font-size="28">免费试用后的续订率提升策略</text>
+      </g>
+      
+      <g transform="translate(460 0)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 投资行为</text>
+        <text x="0" y="48" fill="#475467" font-size="28">长期持有亏损股票的典型诱因</text>
+      </g>
+      
+      <g transform="translate(0 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 组织管理</text>
+        <text x="0" y="48" fill="#475467" font-size="28">福利削减引发的员工满意度塌缩</text>
+      </g>
+      
+      <g transform="translate(460 110)">
+        <text x="0" y="0" fill="#7F56D9" font-size="32" font-weight="600">• 政策设计</text>
+        <text x="0" y="48" fill="#475467" font-size="28">税收优惠比直接补贴更有效</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 实践要点与陷阱 -->
+  <g transform="translate(96 1540)">
+    <rect width="420" height="180" rx="24" fill="#F9F5FF" stroke="#9E77ED" stroke-width="2"/>
+    <text x="40" y="64" fill="#7F56D9" font-size="32" font-weight="600">✓ 实践要点</text>
+    <text x="40" y="108" fill="#1D2939" font-size="28">• 建立客观价值评估框架</text>
+    <text x="40" y="148" fill="#1D2939" font-size="28">• 设置决策冷静期机制</text>
+
+    <g transform="translate(468 0)">
+      <rect width="420" height="180" rx="24" fill="#FFF1F3" stroke="#FDA29B" stroke-width="2"/>
+      <text x="40" y="64" fill="#F04438" font-size="32" font-weight="600">✗ 常见陷阱</text>
+      <text x="40" y="108" fill="#1D2939" font-size="28">• 现状偏好导致创新停滞</text>
+      <text x="40" y="148" fill="#1D2939" font-size="28">• 过度补偿心理损失</text>
+    </g>
+  </g>
+
+  <!-- 关联模型 -->
+  <g transform="translate(96 1760)">
+    <rect width="888" height="120" rx="16" fill="#F9FAFB" stroke="#EAECF0" stroke-width="2"/>
+    <text x="48" y="50" fill="#1D2939" font-size="28" font-weight="600">关联模型</text>
+    
+    <g transform="translate(48 70)">
+      <g transform="translate(0 0)">
+        <circle cx="16" cy="16" r="6" fill="#7F56D9"/>
+        <text x="40" y="24" fill="#475467" font-size="24">损失厌恶 (#22)</text>
+      </g>
+      
+      <g transform="translate(240 0)">
+        <circle cx="16" cy="16" r="6" fill="#12B76A"/>
+        <text x="40" y="24" fill="#475467" font-size="24">禀赋效应 (#32)</text>
+      </g>
+      
+      <g transform="translate(480 0)">
+        <circle cx="16" cy="16" r="6" fill="#F79009"/>
+        <text x="40" y="24" fill="#475467" font-size="24">沉没成本谬误 (#45)</text>
+      </g>
+    </g>
+  </g>
+</svg>

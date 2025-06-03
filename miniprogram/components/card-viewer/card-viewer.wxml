@@ -1,0 +1,42 @@
+<!--卡片查看器组件-->
+<view class="card-viewer">
+  <!-- 搜索栏 -->
+  <search-bar 
+    placeholder="搜索思维模型..."
+    bind:cardChanged="onSearchCardChanged"
+  ></search-bar>
+
+  <!-- 卡片容器 -->
+  <view class="card-container" style="transform: translateX({{translateX}}px); transition: transform {{transitionDuration}}s ease;">
+    <view class="card-wrapper">
+      <!-- SVG卡片显示区域 -->
+      <view class="card-content">
+        <image 
+          wx:if="{{cardData && cardData.svgPath}}"
+          class="svg-image" 
+          src="{{cardData.svgPath}}" 
+          mode="aspectFit"
+          bindload="onImageLoad"
+          binderror="onImageError"
+          bindtouchstart="onTouchStart"
+          bindtouchmove="onTouchMove"
+          bindtouchend="onTouchEnd"
+        />
+        <view class="loading-placeholder" wx:else>
+          <text class="loading-text">加载中...</text>
+        </view>
+      </view>
+      
+      <!-- 卡片信息 -->
+      <view class="card-info" wx:if="{{cardData}}">
+        <text class="card-title">{{cardData.name}}</text>
+        <text class="card-number">{{cardData.id}} / {{totalCards}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 滑动提示 -->
+  <view class="swipe-hint {{showSwipeHint ? 'show' : 'hide'}}">
+    <text class="hint-text">👈 左右滑动切换卡片 👉</text>
+  </view>
+</view> 
